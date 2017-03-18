@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#f7f5f4"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/mainlayout">
+
+        <ImageView
+            android:id="@+id/iconIdThermostat"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvVersionNameThermostat"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconIdThermostat"
+            android:text="MEM-ON"
+            android:minHeight="45dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/tvVersionNameThermostat">
+
+            <TextView
+                android:id="@+id/minThermostat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:text="Min"/>
+
+            <TextView
+                android:id="@+id/valueMinThermostat"
+                android:layout_below="@id/minThermostat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/maxThermostat"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/minThermostat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:text="Max"/>
+
+            <TextView
+                android:id="@+id/valueMaxThermostat"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/minThermostat"
+                android:layout_below="@id/maxThermostat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black"
+                android:text="10"/>
+
+            <ImageView
+                android:id="@+id/iconTypeThermostat"
+                android:src="@drawable/cold38"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandable_part_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVersionNameThermostat"
+            android:clickable="false"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/divider"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:scaleType="fitXY"
+                android:src="?android:attr/listDivider" />
+
+
+            <RelativeLayout
+                android:id="@+id/grzanieLayout"
+                android:layout_below="@id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/grzanie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grzanie"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/iconOne"
+                    android:layout_below="@id/grzanie"
+                    android:src="@drawable/fire38"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chlodzenieLayout"
+                android:layout_below="@id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+
+            <TextView
+
+                android:id="@+id/chlodzenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chłodzenie"
+                android:layout_marginLeft="5dp" />
+
+            <ImageButton
+                android:id="@+id/iconTwo"
+                android:layout_below="@id/chlodzenie"
+                android:src="@drawable/cold38"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wylaczLayout"
+                android:layout_below="@id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/wylacz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wyłącz"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageButton
+                android:id="@+id/iconThree"
+                android:layout_below="@id/wylacz"
+                android:src="@drawable/dissable"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/minTempTextView"
+                android:layout_below="@id/wylaczLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimalna Temperatura --"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/minTempEditText"
+                android:layout_below="@id/minTempTextView"
+                android:ems="4"
+                android:maxEms="4"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tempTextView"
+                android:layout_below="@id/minTempEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura --"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/tempEditText"
+                android:layout_below="@id/tempTextView"
+                android:ems="4"
+                android:maxEms="4"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/histerezaTempTextView"
+                android:layout_below="@id/tempEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Histereza --"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/histerezaTempEditText"
+                android:layout_below="@id/histerezaTempTextView"
+                android:ems="4"
+                android:maxEms="4"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/histerezaTempEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/saveThermostat"
+                    android:layout_marginTop="5dp"
+                    android:elevation="5dp"
+                    android:background="#e0f2f1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Zapisz"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/cancelThermostat"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="5dp"
+                    android:background="#e0f2f1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Anuluj"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

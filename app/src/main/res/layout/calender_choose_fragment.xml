@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calender_horizontal_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbars="horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calender_vertical_recycler_view"
+        android:layout_below="@id/calender_horizontal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/groupsButton"
+        android:layout_below="@id/calender_vertical_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/offbutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#81c784"
+            android:text="OFF"/>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/dobabutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#81c784"
+            android:text="DOBA"/>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/weekbutton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#81c784"
+            android:text="TYDZIEŃ"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/groupsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/saveButtonCalender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#81c784"
+            android:text="OK"/>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/cancelButtonCalender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#81c784"
+            android:text="ANULUJ"/>
+
+    </LinearLayout>
+</RelativeLayout>

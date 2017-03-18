@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/sliderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <com.gc.materialdesign.views.Slider
+            android:id="@+id/slider"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#26e4d7"
+            materialdesign:max="240"
+            materialdesign:min="0"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/textViewSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/slider"
+            android:layout_weight="2"
+            android:ems="3"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:text="0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/sliderGroup">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/buttonControlFragmentSave"
+            android:background="#81c784"
+            android:text="Zatwierdz"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/buttonControlFragmentCancel"
+            android:layout_toRightOf="@id/buttonControlFragmentSave"
+            android:background="#81c784"
+            android:text="Anuluj"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

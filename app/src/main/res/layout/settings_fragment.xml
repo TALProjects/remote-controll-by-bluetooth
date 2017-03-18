@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp">
+
+    <LinearLayout android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/connectHold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czas podtrzymania połączenia (sec) --"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/connectHoldEditText"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:ems="4"
+        android:maxEms="4"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+    <Button
+        android:id="@+id/connectHoldSave"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:background="#e0f2f1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/connectHoldCancel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="5dp"
+        android:background="#e0f2f1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Anuluj"
+        android:textStyle="bold"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="300dp"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/shape"
+    android:padding="10dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listnewpairbluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/informationClearBluetooth"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/button_material_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="52sp"
+        android:visibility="invisible"/>
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@+id/progressBarCircularIndeterminate"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#1E88E5" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:id="@+id/thermostatLinearLayout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#e3f2fd">
+
+        <TextView
+            android:id="@+id/weatherInfoAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aby otrzymać informację o pogodzie należy włączyć internet"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/weatherInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        <TextView
+            android:id="@+id/citytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:lines="2"
+            />
+
+        <TextView
+
+            android:layout_below="@id/citytext"
+            android:id="@+id/mintemptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:layout_below="@id/mintemptext"
+            android:id="@+id/maxtemptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:layout_below="@id/maxtemptext"
+            android:id="@+id/currenttemptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+
+            android:layout_toRightOf="@+id/maxtemptext"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/weathericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="CLICK"-->
+    <!--android:id="@+id/ButtonClick"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/thermostat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

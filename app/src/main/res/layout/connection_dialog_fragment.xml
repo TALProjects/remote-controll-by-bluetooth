@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/communicationDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="52sp"
+        android:text="Czy chcesz się połączyć z urządzeniem?"
+        android:height="52sp"
+        android:layout_margin="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/connectButton"
+            android:layout_width="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="POŁĄCZ"></com.gc.materialdesign.views.ButtonRectangle>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/dismissButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ANULUJ">
+        </com.gc.materialdesign.views.ButtonRectangle>
+    </LinearLayout>
+
+</LinearLayout>

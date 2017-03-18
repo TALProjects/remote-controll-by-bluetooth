@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="20">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/device_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/buttonFloatDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            materialdesign:rippleSpeed="100"
+            android:background="#80deea"
+            materialdesign:iconDrawable="@drawable/refresh48">
+
+        </com.gc.materialdesign.views.ButtonFloat>
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBarCircularIndeterminate"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#1E88E5"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/progressBarCircularIndeterminate"
+            android:text="Szukam urządzeń..."
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+
+        android:id="@+id/searchBluetoothButton"
+        materialdesign:rippleSpeed="100"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="48dp"
+        android:layout_weight="4"
+        android:text="Wyszukaj"/>
+</LinearLayout>

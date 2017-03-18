@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#f7f5f4"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/mainlayout">
+
+        <ImageView
+            android:id="@+id/iconIdThermostat"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvVersionNameThermostat"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconIdThermostat"
+            android:layout_centerVertical="true"
+            android:text="MEM-ON"
+            android:minHeight="45dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/groupLed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tvVersionNameThermostat"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/oneLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/oneLightOff"
+                android:layout_below="@id/oneLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/twoLightOn"
+                android:layout_toRightOf="@id/oneLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/twoLightOff"
+                android:layout_below="@id/twoLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/oneLightOn"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/threeLightOn"
+                android:layout_toRightOf="@id/twoLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/threeLightOff"
+                android:layout_toRightOf="@id/twoLightOn"
+                android:layout_below="@id/threeLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/fourLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/threeLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/fourLightOff"
+                android:layout_below="@id/fourLightOn"
+                android:layout_toRightOf="@id/threeLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"/>
+
+
+            <ImageView
+                android:id="@+id/fiveLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/fourLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/fiveLightOff"
+                android:layout_below="@id/fiveLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/fourLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/sixLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/fiveLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/sixLightOff"
+                android:layout_below="@id/sixLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/fiveLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/sevenLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/sixLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/sevenLightOff"
+                android:layout_below="@id/sevenLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/sixLightOn"/>
+
+            <ImageView
+                android:id="@+id/eightLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/sevenLightOn"/>
+
+
+            <ImageView
+                android:id="@+id/eightLightOff"
+                android:layout_below="@id/eightLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greylight2"
+                android:layout_toRightOf="@id/sevenLightOn"/>
+
+
+        </RelativeLayout>
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/buttonCalender"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/groupLed"
+            android:background="#81c784"
+            android:text="DOBA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
